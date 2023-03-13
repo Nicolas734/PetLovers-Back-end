@@ -1,6 +1,6 @@
 import express from "express";
 import * as dotenv from "dotenv"
-import databaseConection from "./config/db";
+import db from "./config/db";
 
 dotenv.config()
 
@@ -8,8 +8,7 @@ const app = express();
 app.use(express.json());
 
 try {
-    databaseConection().then(()=>{
-        
+    db.authenticate().then(()=>{
         console.log('Banco de Dados Conectado.');
     });
     

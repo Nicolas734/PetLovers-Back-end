@@ -1,19 +1,19 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, ManyToOne, JoinColumn } from "typeorm";
-import TiposUsuario from "./tipoUsuario";
+import { DataTypes } from 'sequelize';
+import db from "../config/db"
 
-@Entity()
-class Usuarios{
-    @PrimaryGeneratedColumn()
-    id!: number;
-    @Column({ nullable:false })
-    nome!: string;
-    @Column({ unique: true, nullable: false })
-    email!: string;
-    @Column({ nullable:false })
-    senha!: string;
-    @ManyToOne(() => TiposUsuario, (tipoUsuario) => tipoUsuario.id)
-    @JoinColumn({ name: 'id_tipo_usuario' })
-    id_tipo_usuario!: TiposUsuario
-};
+const Usuarios = db.define('usuarios',{
+    id:{
+        type: DataTypes.INTEGER
+    },
+    nome: {
+        type: DataTypes.STRING
+    },
+    email: {
+        type: DataTypes.STRING
+    },
+    senha: {
+        type: DataTypes.STRING
+    }
+})
 
 export default Usuarios;
