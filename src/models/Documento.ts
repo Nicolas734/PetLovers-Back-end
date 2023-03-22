@@ -4,7 +4,10 @@ const { Schema } = mongoose;
 
 
 const documento = new Schema({
-    documento: String,
+    documento: {
+        type: String,
+        enum:['rg', 'cpf']
+    },
     numero: String
 });
 

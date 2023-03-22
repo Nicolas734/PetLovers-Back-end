@@ -21,6 +21,19 @@ class UsuarioController{
             res.status(500).json({message:error});
         }
     }
+
+    public async buscarUsuario(req: Request, res: Response){
+        try{
+            const usuario = await Usuario.findById(req.params.id)
+            if(usuario){
+                res.json(usuario)
+            }else{
+                res.json({message: `usuario ${req.params.id} não encontrado....`})
+            }
+        }catch(error){
+            res.status(500).json({message:error});
+        }
+    }
 }
 
 
