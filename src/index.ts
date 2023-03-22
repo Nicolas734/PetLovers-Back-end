@@ -1,20 +1,14 @@
 import express from "express";
-import * as dotenv from "dotenv"
-import db from "./config/db";
+import * as dotenv from "dotenv";
+import startDb from "./config/db";
+import routes from "./routes";
 
 dotenv.config()
+startDb()
 
 const app = express();
 app.use(express.json());
-
-try {
-    db.authenticate().then(()=>{
-        console.log('Banco de Dados Conectado.');
-    });
-    
-} catch (error) {
-    console.error('Connection error:', error);
-}
+app.use(routes);
 
 const PORT = process.env.PORT || 3000
 
