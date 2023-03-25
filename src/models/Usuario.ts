@@ -5,10 +5,9 @@ import Telefone from "./Telefone";
 
 
 const { Schema } = mongoose;
-const ObjectId = mongoose.Types.ObjectId;
+
 
 const usuario = new Schema({
-
     nome: String,
     email: String,
     senha: String,
