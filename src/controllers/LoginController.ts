@@ -22,9 +22,8 @@ class LoginController{
     }
 
     public async testeLogin(req: Request, res:Response){
-        const email = 'teste@gmail.com';
-        const senha = '12345';
-        const token = await generateToken({email:email, senha:senha});
+        const usuario = await Usuario.findOne({ email: "nichollaslimma734@gmail.com", senha: "nicolas123"}, '-__v');
+        const token = await generateToken(usuario);
         res.set('Authorization', `Bearer ${token}`);
         res.status(200).json({message:'Login realizado com sucesso...', token:token});
     }
