@@ -5,12 +5,13 @@ class PetController{
     public async cadastrarPet(req:Request, res:Response){
         try{
             let tamanho = req.body.tamanho || 'pequeno';
+            const dono_id = res.locals.jwtPayload._id
             const pet = new Pet({
                 nome: req.body.nome,
                 idade: req.body.idade,
                 raca: req.body.raca,
                 tamanho: tamanho,
-                dono_id: req.params.dono_id
+                dono_id: dono_id
             })
             const petCadastrado = await pet.save();
             res.status(201).json(petCadastrado);
@@ -43,7 +44,8 @@ class PetController{
 
     public async buscarPetsDeUmUsuario(req: Request, res: Response){
         try{
-            const pets = await Pet.find({dono_id:req.params.dono_id}, '-__v').populate('dono_id', '-__v -nome -_id -email -senha -endereco -documento -telefone -tipoUsuario').exec();
+            const dono_id = res.locals.jwtPayload._id
+            const pets = await Pet.find({dono_id:dono_id}, '-__v').populate('dono_id', '-__v -nome -_id -email -senha -endereco -documento -telefone -tipoUsuario').exec();
             res.status(200).json(pets)
         }catch(error){
             res.status(500).json({ message:error });

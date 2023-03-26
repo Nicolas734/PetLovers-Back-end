@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import * as dotenv from "dotenv";
-import { Request, Response, NextFunction, Locals } from 'express';
+import { Request, Response, NextFunction } from 'express';
 
 dotenv.config();
 
@@ -22,7 +22,6 @@ export const authorization = async (req: Request, res: Response, next: NextFunct
         const token = authorization.slice(7);
         const decoded = jwt.verify(token, JWT_SECRET);
         res.locals.jwtPayload = decoded;
-        console.log(decoded)
     }catch(error){
         res.status(401).send({error:"Não autorizado...."}); 
     }
