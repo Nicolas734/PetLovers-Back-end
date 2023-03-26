@@ -20,6 +20,14 @@ class LoginController{
             res.status(500).json(error);
         }
     }
+
+    public async testeLogin(req: Request, res:Response){
+        const email = 'teste@gmail.com';
+        const senha = '12345';
+        const token = await generateToken({email:email, senha:senha});
+        res.set('Authorization', `Bearer ${token}`);
+        res.status(200).json({message:'Login realizado com sucesso...', token:token});
+    }
 }
 
 

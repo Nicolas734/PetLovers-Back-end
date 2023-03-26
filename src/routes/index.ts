@@ -8,5 +8,6 @@ const routes = Router();
 routes.use('/usuario', usuarioRoutes);
 routes.use('/pet', petRoutes);
 routes.post('/login', LoginController.login);
+routes.get('/teste-login', LoginController.testeLogin);
 
 export default routes;
