@@ -1,5 +1,5 @@
-import { Request, Response } from "express"
-import Usuario from "../models/Usuario"
+import { Request, Response } from "express";
+import Usuario from "../models/Usuario";
 
 
 class UsuarioController{
