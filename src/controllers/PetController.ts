@@ -78,7 +78,7 @@ class PetController{
                 }
                 await pet.save();
 
-                res.json(pet);
+                res.status(200).json(pet);
             }
         }catch(error){
             res.status(500).json({ message:error });
