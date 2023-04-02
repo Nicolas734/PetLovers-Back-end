@@ -13,13 +13,13 @@ export const generateToken = async (dados: any) => {
 
 export const authorization = async (req: Request, res: Response, next: NextFunction) => {
     const authorization = req.headers.authorization;
-
+    
     if (!authorization  || !authorization.startsWith('Bearer ')) {
         return res.status(401).json({ error: 'Não autorizado....' });
     }
 
     try{
-        const token = authorization.slice(7);
+        const [,token] = authorization.split(" ")
         const decoded = jwt.verify(token, JWT_SECRET);
         res.locals.jwtPayload = decoded;
     }catch(error){

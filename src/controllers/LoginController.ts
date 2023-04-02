@@ -11,7 +11,7 @@ class LoginController{
             if(usuario){
                 const token = await generateToken(usuario);
                 res.set('Authorization', `Bearer ${token}`);
-                res.status(200).json({message:'Login realizado com sucesso...', token:token});
+                res.status(200).json({message:'Login realizado com sucesso...', token:token, permissao:usuario.tipoUsuario});
             }else{
                 res.status(404).json({message: `usuario não encontrado, email ou senha incorreto....`});
             }
