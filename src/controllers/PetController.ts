@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import Pet from "../models/Pet";
+import { idEhValido } from "../functions/utils";
 
 class PetController{
     public async cadastrarPet(req:Request, res:Response){
@@ -33,11 +34,16 @@ class PetController{
 
     public async buscarPetPorId(req: Request, res: Response){
         try{
-            const pet = await Pet.findById(req.params.id, '-__v');
+            const pet_id = req.params.id;
+            if(!idEhValido(pet_id)){
+                return res.status(400).json({message: `id ${pet_id} não é valido...`});
+            }
+
+            const pet = await Pet.findById(pet_id, '-__v');
             if(pet){
-                res.status(200).json(pet)
+                res.status(200).json(pet);
             }else{
-                res.status(404).json({message: `pet ${req.params.id} não encontrado....`})
+                res.status(404).json({message: `pet ${pet_id} não encontrado....`});
             }
         }catch(error){
             res.status(500).json({message:error});
@@ -58,9 +64,14 @@ class PetController{
 
     public async atualizarInfosDoPet(req: Request, res: Response){
         try{
-            const pet = await Pet.findById(req.params.id, '-__v');
+            const pet_id = req.params.id;
+            if(!idEhValido(pet_id)){
+                return res.status(400).json({message: `id ${pet_id} não é valido...`});
+            }
+
+            const pet = await Pet.findById(pet_id, '-__v');
             if(!pet){
-                res.status(404).json(`Pet ${req.params.id} não encontrado...`);
+                res.status(404).json(`Pet ${pet_id} não encontrado...`);
             }else{
 
                 const {nome, idade, raca, tamanho, } = req.body;
@@ -88,11 +99,16 @@ class PetController{
 
     public async excluirPet(req: Request, res: Response){
         try{
-            const pet = await Pet.findByIdAndDelete(req.params.id);
+            const pet_id = req.params.id;
+            if(!idEhValido(pet_id)){
+                return res.status(400).json({message: `id ${pet_id} não é valido...`});
+            }
+
+            const pet = await Pet.findByIdAndDelete(pet_id);
             if(!pet){
-                res.status(404).json(`Pet ${req.params.id} não encontrado...`);
+                res.status(404).json(`Pet ${pet_id} não encontrado...`);
             }else{
-                res.status(202).json(`Pet ${req.params.id} excluído com sucesso!`);
+                res.status(202).json(`Pet ${pet_id} excluído com sucesso!`);
             }
         }catch(error){
             res.status(500).json({ message:error });

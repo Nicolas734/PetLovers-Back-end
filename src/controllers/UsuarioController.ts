@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import Usuario from "../models/Usuario";
+import { idEhValido } from "../functions/utils";
 
 
 class UsuarioController{
@@ -23,11 +24,16 @@ class UsuarioController{
 
     public async buscarUsuario(req: Request, res: Response){
         try{
-            const usuario = await Usuario.findById(req.params.id, '-__v');
+            const id = req.params.id;
+            if(!idEhValido(id)){
+                return res.status(400).json({message: `id ${id} não é valido...`});
+            }
+
+            const usuario = await Usuario.findById(id, '-__v');
             if(usuario){
                 res.status(200).json(usuario);
             }else{
-                res.status(404).json({message: `usuario ${req.params.id} não encontrado....`});
+                res.status(404).json({message: `usuario ${id} não encontrado....`});
             }
         }catch(error){
             res.status(500).json({message:error});
@@ -36,9 +42,14 @@ class UsuarioController{
 
     public async atualizarInfosDoUsuario(req: Request, res: Response){
         try{
-            const usuario = await Usuario.findById(req.params.id, '-__v');
+            const id = req.params.id;
+            if(!idEhValido(id)){
+                return res.status(400).json({message: `id ${id} não é valido...`});
+            }
+
+            const usuario = await Usuario.findById(id, '-__v');
             if(!usuario){
-                res.status(404).json({message: `usuario ${req.params.id} não encontrado....`});
+                res.status(404).json({message: `usuario ${id} não encontrado....`});
             }else{
                 const { nome, email } = req.body;
                 if(nome){
@@ -58,11 +69,16 @@ class UsuarioController{
 
     public async excluirUsuario(req: Request, res: Response){
         try{
-            const usuario = await Usuario.findByIdAndDelete(req.params.id);
+            const id = req.params.id;
+            if(!idEhValido(id)){
+                return res.status(400).json({message: `id ${id} não é valido...`});
+            }
+
+            const usuario = await Usuario.findByIdAndDelete(id);
             if(!usuario){
-                res.status(404).json({message: `usuario ${req.params.id} não encontrado....`});
+                res.status(404).json({message: `usuario ${id} não encontrado....`});
             }else{
-                res.status(202).json({message: `usuario ${req.params.id} excluído com sucesso!`});
+                res.status(202).json({message: `usuario ${id} excluído com sucesso!`});
             }
         }catch(error){
             res.status(500).json({message:error});
