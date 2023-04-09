@@ -92,7 +92,7 @@ class PetController{
             if(!pet){
                 res.status(404).json(`Pet ${req.params.id} não encontrado...`);
             }else{
-                res.status(200).json(`Pet ${req.params.id} excluído com sucesso!`);
+                res.status(202).json(`Pet ${req.params.id} excluído com sucesso!`);
             }
         }catch(error){
             res.status(500).json({ message:error });

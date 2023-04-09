@@ -1,7 +1,7 @@
 import { Router } from "express";
 import usuarioRoutes from "./usuarioRoutes";
 import petRoutes from "./petRoutes";
-import historicoRouter from "./historicoRouter";
+import historicoRouter from "./historicoRoutes";
 import { LoginController } from "../controllers";
 
 

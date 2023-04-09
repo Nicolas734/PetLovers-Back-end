@@ -4,16 +4,19 @@ import Tratamento from "./Tratamento";
 import Pet from "./Pet";
 
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const historico = new Schema({
-    diagnostico: Diagnostico,
+    diagnostico: {
+        type: Diagnostico,
+        require: true
+    },
     tratamento: Tratamento,
     data_registro: {
         type: Date,
         default: Date.now
     },
-    pet_id:{
+    pet_id: {
         type: mongoose.Types.ObjectId,
         ref: Pet
     }

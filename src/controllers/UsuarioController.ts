@@ -62,7 +62,7 @@ class UsuarioController{
             if(!usuario){
                 res.status(404).json({message: `usuario ${req.params.id} não encontrado....`});
             }else{
-                res.status(404).json({message: `usuario ${req.params.id} excluído com sucesso!`});
+                res.status(202).json({message: `usuario ${req.params.id} excluído com sucesso!`});
             }
         }catch(error){
             res.status(500).json({message:error});

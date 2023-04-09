@@ -1,5 +1,7 @@
-import { Schema } from "mongoose";
+import mongoose from "mongoose";
 
+
+const { Schema } = mongoose;
 
 const tratamento = new Schema({
     tratamento: String,
