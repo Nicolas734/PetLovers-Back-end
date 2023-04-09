@@ -7,10 +7,10 @@ class HistoricoController {
     public async cadastrarHistorico(req: Request, res: Response) {
         try {
             const pet_id = req.params.id;
-            const pet = Pet.findById(pet_id, '-__v');
+            const pet = await Pet.findById(pet_id, '-__v');
 
             if (!pet) {
-                res.status(404).json({ message: `Pet ${req.params.id} não encontrado...` })
+                res.status(404).json({ message: `Pet ${req.params.id} não encontrado...` });
             } else {
 
                 const historico = new Historico({
@@ -33,6 +33,21 @@ class HistoricoController {
             const historicos = await Historico.find({}, "-__v");
             res.status(200).json(historicos);
         } catch (error) {
+            res.status(500).json({ message: error });
+        }
+    }
+
+    public async buscarHistorico(req: Request, res: Response){
+        try{
+            const hist_id = req.params.id;
+            const historico = await Historico.findById(hist_id, "-__v");
+
+            if(!historico){
+                res.status(404).json({ message: `Historico ${req.params.id} não encontrado...` });
+            }else{
+                res.status(200).json(historico)
+            }
+        }catch(error){
             res.status(500).json({ message: error });
         }
     }
