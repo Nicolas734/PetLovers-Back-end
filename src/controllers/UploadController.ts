@@ -1,6 +1,9 @@
 import { Request, Response } from "express";
 import Drive from "../functions/Drive";
+import path from "path";
 
+
+const DIR = process.env.DIR || 'uploads/';
 
 class UploadController{
     public async sendToLocal(req:Request, res:Response){
@@ -10,6 +13,17 @@ class UploadController{
                 throw Error;
             }
             res.json(file.originalname);
+        }catch(error){
+            res.status(500).json(error);
+        }
+    }
+
+
+    public async searchFileInLocalByName(req:Request, res:Response){
+        try{
+            const { filename } = req.params;
+            const filePath = path.join(__dirname, DIR, filename).replace(/\\src\\controllers\\/g, '\\');
+            res.sendFile(filePath);
         }catch(error){
             res.status(500).json(error);
         }
@@ -33,8 +47,8 @@ class UploadController{
 
     public async searchFileInDriveById(req:Request, res:Response){
         try{
-            const { fileId } = req.body;
-            const link = await Drive.getImageLinkById(fileId);
+            const { fileid } = req.params;
+            const link = await Drive.getImageLinkById(fileid);
             res.json(link);
         }catch(error){
             res.status(500).json(error);

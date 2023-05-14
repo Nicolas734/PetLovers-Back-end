@@ -3,10 +3,10 @@ import * as dotenv from "dotenv";
 
 
 
-dotenv.config()
+dotenv.config();
 
 const DIR = process.env.DIR || 'uploads/';
-const SEND_TO_DRIVE = process.env.SEND_TO_DRIVE || false;
+// const SEND_TO_DRIVE = process.env.SEND_TO_DRIVE || false;
 
 const storage = {
     local: multer.diskStorage({
@@ -20,8 +20,8 @@ const storage = {
     drive: multer.memoryStorage()
 }
 
-// const uploadLocal = multer({storage:storage.local});
-// const uploadDrive = multer({storage:storage.drive});
-const upload = multer({storage: SEND_TO_DRIVE ? storage.drive : storage.local});
+const uploadLocal = multer({storage:storage.local});
+const uploadDrive = multer({storage:storage.drive});
+// const upload = multer({storage: SEND_TO_DRIVE ? storage.drive : storage.local});
 
-export default upload;
+export { uploadLocal, uploadDrive };
