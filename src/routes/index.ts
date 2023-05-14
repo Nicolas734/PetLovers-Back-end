@@ -16,7 +16,8 @@ routes.use('/historico', historicoRouter);
 
 routes.post('/login', LoginController.login);
 routes.get('/teste-login', LoginController.testeLogin);
-routes.post('/upload', upload.single('file'), UploadController.sendToLocal);
+routes.post('/upload-local', upload.single('file'), UploadController.sendToLocal);
+routes.post('/upload-drive',upload.single('file'), UploadController.sendToDrive);
 
 
 export default routes;
