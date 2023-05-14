@@ -30,22 +30,38 @@ class Drive{
 
     public async createFolder(folderName:string){
         try{
-            return this.client.files.create({
+            const folder = await this.client.files.create({
                 resource: {
                     name: folderName,
                     mimeType: 'application/vnd.google-apps.folder',
                 },
                 fields: 'id, name',
             })
+            return folder
         }catch(error){
             console.error(error)
             throw error
         }
     }
 
+    public async verifyAndcreateFolderIfNotExist(folderName:string){
+        try{
+            const folder = await this.searchFolder(folderName);
+            if(folder.data.files.length){
+                return folder.data.files[0].id;
+            }else{
+                const newFolder = await this.createFolder(folderName);
+                return newFolder.data.id;
+            }
+        }catch(error){
+            console.error(error);
+            throw error;
+        }
+    }
+
     public async searchFolder(folderName:string){
         try {
-            const folders = this.client.files.list({
+            const folders = await this.client.files.list({
                     q: `mimeType='application/vnd.google-apps.folder' and name='${folderName}' and trashed=false`,
                     fields: 'files(id, name, createdTime)',
             });
@@ -56,7 +72,7 @@ class Drive{
         }
     };
 
-    public async sendFileFromDrive(filename:string, mimetype:string, fileContent:string, folderId:string){
+    public async sendFileFromDrive(filename:string, mimetype:string, fileContent, folderId){
         const fileMetadata = {
             name: filename,
             parents: [folderId] // ID da pasta onde o arquivo será salvo
@@ -72,6 +88,35 @@ class Drive{
                 fields: 'id, name'
             });
             return response;
+        }catch(error){
+            console.error(error);
+            throw error;
+        }
+    }
+
+    // public async getImageLinkById(imageId:string){
+    //     try{
+    //         const response = await this.client.files.get({
+    //             fileId: imageId,
+    //             fields: 'webViewLink'
+    //         });
+    //         return response.data.webViewLink;
+    //     }catch(error){
+    //         console.error(error);
+    //         throw error;
+    //     }
+    // }
+
+    public async getImageLinkById(imageId:string){
+        try{
+            const response = await this.client.files.get({
+                fileId: imageId,
+                fields: 'webViewLink'
+            });
+            const webViewLink = response.data.webViewLink;
+            const splitLink = webViewLink.split('/');
+            const newLink = `https://drive.google.com/uc?id=${splitLink[5]}`;
+            return newLink;
         }catch(error){
             console.error(error);
             throw error;
