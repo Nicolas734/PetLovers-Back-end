@@ -1,6 +1,9 @@
 import { Request, Response } from "express";
 import Drive from "../functions/Drive";
 import path from "path";
+import Usuario from "../models/Usuario";
+import Pet from "../models/Pet";
+
 
 
 const DIR = process.env.DIR || 'uploads/';
@@ -31,15 +34,43 @@ class UploadController{
 
     public async sendToDrive(req:Request, res:Response){
         try{
+            const { tipo, id } = req.body;
+            let target;
+
             const folderId = await Drive.verifyAndcreateFolderIfNotExist('PetLovers');
             const file = req.file;
             const [,ext] = file.originalname.split('.');
-            const fileName = Date.now() + '.' + ext;
+            const fileName = `${Date.now()}.${ext}`;
             const mimeType = file.mimetype;
             const fileContent = file.buffer;
             const response = await Drive.sendFileFromDrive(fileName, mimeType, fileContent, folderId);
-            const link = `https://drive.google.com/uc?id=${response.data.id}`
-            res.json({id:response.data.id, name:response.data.name, link:link});
+            const link = `https://drive.google.com/uc?id=${response.data.id}`;
+
+            const uplaod = {
+                local:false,
+                link: link,
+                nome:fileName,
+                ext:ext
+            };
+
+            if(tipo === "usuario"){
+                target = await Usuario.findById(id);
+                if(!target){
+                    throw "Usuario não encontrado...";
+                }
+            };
+
+            if(tipo === "pet"){
+                target = await Pet.findById(id);
+                if(!target){
+                    throw "Pet não encontrado...";
+                }
+            };
+
+            target.upload = uplaod;
+            await target.save();
+
+            res.json(target.upload);
         }catch(error){
             res.status(500).json(error);
         }
