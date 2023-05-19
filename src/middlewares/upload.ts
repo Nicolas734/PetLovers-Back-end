@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const DIR = process.env.DIR || 'uploads/';
+const DIR = 'uploads/';
 // const SEND_TO_DRIVE = process.env.SEND_TO_DRIVE || false;
 
 const storage = {

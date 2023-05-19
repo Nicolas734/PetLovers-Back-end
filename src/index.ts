@@ -10,10 +10,8 @@ import { dirExiste } from "./functions/utils";
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
-const DIR = process.env.DIR || 'uploads/';
 
 startDb();
-dirExiste(DIR);
 
 const app = express();
 
