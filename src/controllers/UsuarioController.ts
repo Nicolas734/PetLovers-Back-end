@@ -24,7 +24,7 @@ class UsuarioController{
 
     public async buscarUsuario(req: Request, res: Response){
         try{
-            const id = req.params.id;
+            const id = res.locals.jwtPayload._id
             if(!idEhValido(id)){
                 return res.status(400).json({message: `id ${id} não é valido...`});
             }
