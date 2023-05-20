@@ -81,14 +81,38 @@ class Drive{
             mimeType: mimetype,
             body: Readable.from(fileContent)
         };
+
         try {
             const response = await this.client.files.create({
                 resource: fileMetadata,
                 media: media,
-                fields: 'id, name'
+                fields: 'id, name',
+                supportsAllDrives: true,
+
             });
+
+            const fileId = response.data.id;
+            await this.setFilePermissions(fileId);
+
             return response;
         }catch(error){
+            console.error(error);
+            throw error;
+        }
+    }
+
+    private async setFilePermissions(fileId: string) {
+        const permissions = {
+            role: 'reader',
+            type: 'anyone',
+        };
+
+        try {
+            await this.client.permissions.create({
+                fileId: fileId,
+                requestBody: permissions,
+            });
+        } catch (error) {
             console.error(error);
             throw error;
         }

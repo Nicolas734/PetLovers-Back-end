@@ -21,7 +21,6 @@ class UploadController{
         }
     }
 
-
     public async searchFileInLocalByName(req:Request, res:Response){
         try{
             const { filename } = req.params;
@@ -44,7 +43,7 @@ class UploadController{
             const mimeType = file.mimetype;
             const fileContent = file.buffer;
             const response = await Drive.sendFileFromDrive(fileName, mimeType, fileContent, folderId);
-            const link = `https://drive.google.com/uc?id=${response.data.id}`;
+            const link = `https://drive.google.com/thumbnail?id=${response.data.id}`;
 
             const uplaod = {
                 local:false,
