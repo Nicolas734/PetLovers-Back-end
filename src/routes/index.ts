@@ -2,8 +2,9 @@ import { Router } from "express";
 import usuarioRoutes from "./usuarioRoutes";
 import petRoutes from "./petRoutes";
 import historicoRouter from "./historicoRoutes";
-import { LoginController } from "../controllers";
 import uploadRoutes from "./uploadRoutes";
+import ofertaRoutes from "./ofertasRoutes"
+import { LoginController } from "../controllers";
 
 
 
@@ -13,6 +14,7 @@ routes.use('/usuario', usuarioRoutes);
 routes.use('/pet', petRoutes);
 routes.use('/historico', historicoRouter);
 routes.use('/upload', uploadRoutes);
+routes.use('/oferta', ofertaRoutes);
 
 routes.post('/login', LoginController.login);
 routes.get('/teste-login', LoginController.testeLogin);
