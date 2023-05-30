@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Usuario from "../models/Usuario";
+import { Usuario } from "../models/Usuario";
 import { idEhValido } from "../functions/utils";
 
 

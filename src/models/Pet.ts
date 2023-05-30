@@ -1,9 +1,18 @@
 import mongoose from "mongoose";
-import Usuario from "./Usuario";
+import { Usuario, IUsuario } from "./Usuario";
 import Upload from "./Upload";
 
 
 const { Schema } = mongoose;
+
+interface IPet extends Document{
+    nome: string,
+    idade: number,
+    raca: string,
+    upload: typeof Upload,
+    tamanho: 'pequeno' | 'medio' | ' grande',
+    dono_id: IUsuario
+}
 
 const pet = new Schema({
     nome: String,
@@ -21,6 +30,6 @@ const pet = new Schema({
     }
 });
 
-const Pet = mongoose.model('pets', pet);
+const Pet = mongoose.model<IPet>('pets', pet);
 
 export default Pet;

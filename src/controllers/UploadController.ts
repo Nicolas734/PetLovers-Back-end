@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Drive from "../functions/Drive";
 import path from "path";
-import Usuario from "../models/Usuario";
+import { Usuario } from "../models/Usuario";
 import Pet from "../models/Pet";
 
 

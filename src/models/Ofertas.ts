@@ -10,7 +10,6 @@ interface IOferta extends Document{
     tipo: "produto" | "servico"
 }
 
-
 const oferta = new Schema({
     nome: String,
     descricao: String,
