@@ -11,6 +11,7 @@ import { LoginController } from "../controllers";
 
 const routes = Router();
 
+routes.use('/', (req, res) => res.json('Is Rodando......') )
 routes.use('/usuario', usuarioRoutes);
 routes.use('/pet', petRoutes);
 routes.use('/historico', historicoRouter);

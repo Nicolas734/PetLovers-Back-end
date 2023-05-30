@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-const swaggerAutogen = require('swagger-autogen');
+import swaggerAutogen from 'swagger-autogen';
 
 dotenv.config();
 
@@ -15,7 +15,7 @@ const doc = {
         version: '1.0.0',
     },
     host: `localhost:${PORT}`,
-    basePath: '/api',
+    basePath: '/',
     schemes: ['http'],
 };
 
