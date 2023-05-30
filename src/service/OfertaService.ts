@@ -1,4 +1,4 @@
-import Oferta from "../models/Ofertas";
+import { Oferta } from "../models/Ofertas";
 
 class OfertaService{
     public async criar(nome:string, descricao:string, preco:number, tipo:string){
