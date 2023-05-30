@@ -21,7 +21,19 @@ class CompraController{
             await usuario.save();
             res.status(200).json(usuario)
         }catch(error){
-            console.log(error)
+            res.status(500).json(error);
+        }
+    }
+
+    public async buscarComprasDoUsuario(req:Request, res:Response){
+        try{
+            const user_id = res.locals.jwtPayload._id;
+            const usuario = await Usuario.findById(user_id, '-__v').populate('compras', '-__v').exec()
+            if(!usuario){
+                throw `Usuario ${user_id} não encontrado...`
+            }
+            res.status(200).json(usuario.compras);
+        }catch(error){
             res.status(500).json(error);
         }
     }

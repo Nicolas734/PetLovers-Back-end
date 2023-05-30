@@ -36,13 +36,6 @@ const usuario = new Schema({
         default: 'cliente'
     },
     compras: [{ type: Schema.Types.ObjectId, ref: Oferta }]
-    // compras:{
-    //     type: mongoose.Types.DocumentArray
-    // }
-    // compras:[{
-    //     type: mongoose.Types.ObjectId,
-    //     ref: Oferta
-    // }] 
 });
 
 
