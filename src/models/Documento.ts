@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const { Schema } = mongoose;
 
+const { Schema } = mongoose;
 
 const documento = new Schema({
     documento: {

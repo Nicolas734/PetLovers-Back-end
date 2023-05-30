@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { uploadLocal, uploadDrive } from "../middlewares/upload";
-import UploadController from "../controllers/UploadController";
+import { UploadController } from "../controllers";
 
 
 const routes = Router();

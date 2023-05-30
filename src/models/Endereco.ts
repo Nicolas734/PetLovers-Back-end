@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const { Schema } = mongoose;
 
+const { Schema } = mongoose;
 
 const endereco = new Schema({
     estado: String,

@@ -1,10 +1,17 @@
 import mongoose from "mongoose";
 import Diagnostico from "./Diagnostico";
 import Tratamento from "./Tratamento";
-import Pet from "./Pet";
+import { Pet, IPet } from "./Pet";
 
 
 const { Schema } = mongoose;
+
+interface IHistorico extends Document{
+    diagnostico: typeof Diagnostico,
+    tratamento: typeof Tratamento,
+    data_registro: Date,
+    pet_id: IPet
+}
 
 const historico = new Schema({
     diagnostico: {
@@ -24,4 +31,4 @@ const historico = new Schema({
 
 const Historico = mongoose.model('historicos', historico);
 
-export default Historico;
+export { Historico, IHistorico };

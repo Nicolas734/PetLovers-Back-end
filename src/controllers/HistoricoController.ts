@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import Historico from "../models/Historico";
-import Pet from "../models/Pet";
+import { Historico } from "../models/Historico";
+import { Pet } from "../models/Pet";
 import { idEhValido } from "../functions/utils";
 
 

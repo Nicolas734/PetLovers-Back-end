@@ -1,5 +1,5 @@
 import { Router } from "express";
-import CompraController from "../controllers/CompraController";
+import { CompraController } from "../controllers";
 import { authenticate } from "../middlewares";
 
 

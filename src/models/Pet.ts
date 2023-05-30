@@ -32,4 +32,4 @@ const pet = new Schema({
 
 const Pet = mongoose.model<IPet>('pets', pet);
 
-export default Pet;
+export { Pet, IPet };

@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
-import Pet from "../models/Pet";
+import { Pet } from "../models/Pet";
 import { idEhValido } from "../functions/utils";
+
 
 class PetController{
     public async cadastrarPet(req:Request, res:Response){
