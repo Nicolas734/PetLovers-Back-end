@@ -22,6 +22,24 @@ class UsuarioController{
         }
     }
 
+    public async buscarFuncionarios(req:Request, res:Response){
+        try{
+            const funcionarios = await Usuario.find({tipoUsuario:'funcionario'},'-__v');
+            res.status(200).json(funcionarios);
+        }catch(error){
+            res.status(500).json({message:error});
+        }
+    }
+
+    public async buscarClientes(req:Request, res:Response){
+        try{
+            const clientes = await Usuario.find({tipoUsuario:'cliente'},'-__v');
+            res.status(200).json(clientes);
+        }catch(error){
+            res.status(500).json({message:error});
+        }
+    }
+
     public async buscarUsuario(req: Request, res: Response){
         try{
             const id = res.locals.jwtPayload._id
