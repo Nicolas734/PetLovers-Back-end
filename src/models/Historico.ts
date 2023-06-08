@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Diagnostico from "./Diagnostico";
 import Tratamento from "./Tratamento";
 import { Pet, IPet } from "./Pet";
+import { IUsuario, Usuario } from "./Usuario";
 
 
 const { Schema } = mongoose;
@@ -10,7 +11,9 @@ interface IHistorico extends Document{
     diagnostico: typeof Diagnostico,
     tratamento: typeof Tratamento,
     data_registro: Date,
-    pet_id: IPet
+    custo: String,
+    pet_id: IPet,
+    funcionario_id: IUsuario
 }
 
 const historico = new Schema({
@@ -23,9 +26,14 @@ const historico = new Schema({
         type: Date,
         default: Date.now
     },
+    custo: String,
     pet_id: {
         type: mongoose.Types.ObjectId,
         ref: Pet
+    },
+    funcionario_id: {
+        type: mongoose.Types.ObjectId,
+        ref: Usuario
     }
 });
 
