@@ -9,6 +9,7 @@ class HistoricoController {
     public async cadastrarHistorico(req: Request, res: Response) {
         try {
             const pet_id = req.params.id;
+            const funcionario_id = res.locals.jwtPayload._id
 
             if(!idEhValido(pet_id)){
                 return res.status(400).json({message: `id ${pet_id} não é valido...`});
@@ -22,6 +23,7 @@ class HistoricoController {
 
                 const historico = new Historico({
                     pet_id: pet_id,
+                    funcionario_id: funcionario_id,
                     diagnostico: req.body.diagnostico || null,
                     tratamento: req.body.tratamento || null,
                 });
@@ -37,7 +39,7 @@ class HistoricoController {
 
     public async buscarHistoricos(req: Request, res: Response) {
         try {
-            const historicos = await Historico.find({}, "-__v");
+            const historicos = await Historico.find({}, "-__v").populate('funcionario_id', '-__v -upload.ext -upload.local -upload._id -endereco -documento -telefone -email -senha').exec();
             res.status(200).json(historicos);
         } catch (error) {
             res.status(500).json({ message: error });
@@ -51,7 +53,7 @@ class HistoricoController {
                 return res.status(400).json({message: `id ${hist_id} não é valido...`});
             }
 
-            const historico = await Historico.findById(hist_id, "-__v");
+            const historico = await Historico.findById(hist_id, "-__v").populate('funcionario_id', '-__v -upload.ext -upload.local -upload._id -endereco -documento -telefone -email -senha').exec();
 
             if(!historico){
                 res.status(404).json({ message: `Historico ${req.params.id} não encontrado...` });

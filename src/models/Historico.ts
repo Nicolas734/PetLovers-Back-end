@@ -37,6 +37,6 @@ const historico = new Schema({
     }
 });
 
-const Historico = mongoose.model('historicos', historico);
+const Historico = mongoose.model<IHistorico>('historicos', historico);
 
 export { Historico, IHistorico };
