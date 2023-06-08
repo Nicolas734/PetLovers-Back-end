@@ -5,7 +5,7 @@ import HistoricoController from "./HistoricoController";
 import OfertaController from "./OfertaController";
 import CompraController from "./CompraController";
 import UploadController from "./UploadController";
-
+import AgendamentoController from "./AgendamentoController";
 
 export {
     UsuarioController,
@@ -14,5 +14,6 @@ export {
     HistoricoController,
     OfertaController,
     CompraController,
-    UploadController
+    UploadController,
+    AgendamentoController
 };
