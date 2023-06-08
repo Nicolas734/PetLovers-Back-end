@@ -26,6 +26,7 @@ class HistoricoController {
                     funcionario_id: funcionario_id,
                     diagnostico: req.body.diagnostico || null,
                     tratamento: req.body.tratamento || null,
+                    custo: req.body.custo
                 });
 
                 const historicoCadastrado = await historico.save();
