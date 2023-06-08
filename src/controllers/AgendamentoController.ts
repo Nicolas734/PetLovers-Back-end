@@ -34,6 +34,24 @@ class AgendamentoController {
         }
     }
 
+    public async buscarAgendamentosConcluidos(req: Request, res: Response){
+        try{
+            const agendamentos = await Agendamento.find({status:'concluido'}, "-__v");
+            res.status(200).json(agendamentos);
+        }catch(error){
+            res.status(500).json({ message: error });
+        }
+    }
+
+    public async buscarAgendamentosEmAndamento(req: Request, res: Response){
+        try{
+            const agendamentos = await Agendamento.find({status:'andamento'}, "-__v");
+            res.status(200).json(agendamentos);
+        }catch(error){
+            res.status(500).json({ message: error });
+        }
+    }
+
     public async buscarAgendamento(req: Request, res: Response) {
         try {
             const id = req.params.id;
