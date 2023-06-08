@@ -14,9 +14,9 @@ class AgendamentoController {
                 data_agendamento: req.body.data_agendamento,
                 horario: req.body.horario,
                 status: 'andamento',
-                data_conclusao: req.body.data_conclusao,
+                data_conclusao: null,
                 tipo_Consulta:req.body.tipo_Consulta,
-                complemento:req.body.complemento
+                complemento:req.body.complemento,
             })
             const agendamento = await Agendamento.create(dados);
             res.status(201).json(agendamento);
