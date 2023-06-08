@@ -10,7 +10,9 @@ interface IAgendamento extends Document {
     data_agendamento: Date,
     horario: String,
     status: String,
-    data_conclusao: Date
+    data_conclusao: Date,
+    tipo_Consulta:String,
+    complemento:String
 }
 const agendamento = new Schema({
     id_usuario: {
@@ -39,6 +41,14 @@ const agendamento = new Schema({
         type: Date,
         required: false,
     },
+    tipo_Consulta:{
+        type:String,
+        require:true
+    },
+    complemento:{
+        type:String,
+        require:true
+    }
 });
 const Agendamento = mongoose.model<IAgendamento>('agendamentos', agendamento);
 
