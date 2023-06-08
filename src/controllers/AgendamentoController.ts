@@ -109,6 +109,26 @@ class AgendamentoController {
             res.status(500).json({ message: error });
         }
     }
+
+
+    public async concluirAgendamento(req: Request, res: Response){
+        try{
+            const id = req.params.id
+            const agendamento = await Agendamento.findById(id, "-__v");
+
+            if(!agendamento){
+                res.status(404).json({ message: `agendamento ${id} não encontrado...` });
+            }
+
+            agendamento.status = 'concluido';
+            agendamento.data_conclusao = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
+
+            await agendamento.save();
+            res.status(200).json(agendamento);
+        }catch(error){
+            res.status(500).json({ message: error });
+        }
+    }
 }
 
 export default new AgendamentoController();

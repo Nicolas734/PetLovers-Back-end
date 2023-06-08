@@ -9,10 +9,10 @@ const { Schema } = mongoose;
 interface IAgendamento extends Document {
     id_usuario: IUsuario
     id_pet: IPet,
-    data_agendamento: Date,
+    data_agendamento: String,
     horario: String,
     status:  "andamento" | "concluido",
-    data_conclusao: Date,
+    data_conclusao: String,
     tipo_Consulta:String,
     complemento:String
 }
@@ -29,7 +29,7 @@ const agendamento = new Schema({
         required: true,
     },
     data_agendamento: {
-        type: Date,
+        type: String,
         required: true,
     },
     horario: {
@@ -43,7 +43,7 @@ const agendamento = new Schema({
         required: true,
     },
     data_conclusao: {
-        type: Date,
+        type: String,
         required: false,
     },
     tipo_Consulta:{
