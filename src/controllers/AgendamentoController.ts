@@ -7,7 +7,18 @@ import { Agendamento } from "../models/Agendamento";
 class AgendamentoController {
     public async cadastrarAgendamento(req: Request, res: Response) {
         try {
-            const agendamento = await Agendamento.create(req.body);
+            const id_usuario = res.locals.jwtPayload._id;
+            const dados = new Agendamento({
+                id_usuario: id_usuario,
+                id_pet: req.body.id_pet,
+                data_agendamento: req.body.data_agendamento,
+                horario: req.body.horario,
+                status: 'andamento',
+                data_conclusao: req.body.data_conclusao,
+                tipo_Consulta:req.body.tipo_Consulta,
+                complemento:req.body.complemento
+            })
+            const agendamento = await Agendamento.create(dados);
             res.status(201).json(agendamento);
         } catch (error) {
             res.status(500).json({ message: error });

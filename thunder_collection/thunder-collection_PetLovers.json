@@ -1,112 +1,196 @@
 {
     "client": "Thunder Client",
     "collectionName": "PetLovers",
-    "dateExported": "2023-04-09T14:25:27.876Z",
+    "dateExported": "2023-06-08T17:58:55.436Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "afa5bdfe-84ed-4b06-92e5-89d40b1a3740",
+            "_id": "f36a0d70-e826-4560-9517-6be19094e17d",
             "name": "Historico",
             "containerId": "",
-            "created": "2023-04-09T13:47:28.593Z",
+            "created": "2023-05-05T17:51:02.593Z",
             "sortNum": 10000
         },
         {
-            "_id": "26fff87a-0064-412c-b339-86834999e3ca",
+            "_id": "083ab292-97f6-4456-80bc-7abeb4ff8e00",
             "name": "GET",
-            "containerId": "afa5bdfe-84ed-4b06-92e5-89d40b1a3740",
-            "created": "2023-04-09T13:47:37.222Z",
+            "containerId": "f36a0d70-e826-4560-9517-6be19094e17d",
+            "created": "2023-05-05T17:51:02.594Z",
             "sortNum": 20000
         },
         {
-            "_id": "d7e4a31a-98ba-4e0c-baf9-8663789b61c6",
+            "_id": "c434404d-3ee7-4342-b239-6f8a7bcd134d",
             "name": "POST",
-            "containerId": "afa5bdfe-84ed-4b06-92e5-89d40b1a3740",
-            "created": "2023-04-09T13:47:41.784Z",
+            "containerId": "f36a0d70-e826-4560-9517-6be19094e17d",
+            "created": "2023-05-05T17:51:02.595Z",
             "sortNum": 30000
         },
         {
-            "_id": "36f83f08-cdc0-4b2b-ae00-cbcbd903bae6",
+            "_id": "43d7f89a-fe9a-4f75-8f41-a8085e772336",
             "name": "Pet",
             "containerId": "",
-            "created": "2023-04-09T13:48:58.684Z",
+            "created": "2023-05-05T17:51:02.596Z",
             "sortNum": 40000
         },
         {
-            "_id": "0bacdb3a-df07-4761-be61-ec7f83146e5c",
+            "_id": "a87db2b4-1291-4090-9303-fdaf2e34dd2b",
             "name": "GET",
-            "containerId": "36f83f08-cdc0-4b2b-ae00-cbcbd903bae6",
-            "created": "2023-04-09T13:49:03.382Z",
+            "containerId": "43d7f89a-fe9a-4f75-8f41-a8085e772336",
+            "created": "2023-05-05T17:51:02.597Z",
             "sortNum": 50000
         },
         {
-            "_id": "7c3f6f2e-f409-453e-b045-4c64c9bff6df",
+            "_id": "e4086f9c-ef0f-42a7-909e-f70f396fb7fb",
             "name": "POST",
-            "containerId": "36f83f08-cdc0-4b2b-ae00-cbcbd903bae6",
-            "created": "2023-04-09T13:49:08.037Z",
+            "containerId": "43d7f89a-fe9a-4f75-8f41-a8085e772336",
+            "created": "2023-05-05T17:51:02.598Z",
             "sortNum": 60000
         },
         {
-            "_id": "d1f4d697-445b-4531-8a45-4ba4e41cf86f",
+            "_id": "b9203bc7-fe49-4d13-a2c9-df06f0d83bb4",
             "name": "PUT",
-            "containerId": "36f83f08-cdc0-4b2b-ae00-cbcbd903bae6",
-            "created": "2023-04-09T13:49:14.178Z",
+            "containerId": "43d7f89a-fe9a-4f75-8f41-a8085e772336",
+            "created": "2023-05-05T17:51:02.599Z",
             "sortNum": 70000
         },
         {
-            "_id": "92d85ec2-8f43-4bb8-8274-4d80c56f5e4a",
+            "_id": "252ee1b2-9bdc-428b-92c1-b5fa82c9be70",
             "name": "DELETE",
-            "containerId": "36f83f08-cdc0-4b2b-ae00-cbcbd903bae6",
-            "created": "2023-04-09T13:49:21.103Z",
+            "containerId": "43d7f89a-fe9a-4f75-8f41-a8085e772336",
+            "created": "2023-05-05T17:51:02.600Z",
             "sortNum": 80000
         },
         {
-            "_id": "4d00597f-0b41-454f-b47b-b27db64461c1",
+            "_id": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
             "name": "Usuario",
             "containerId": "",
-            "created": "2023-04-09T13:55:24.303Z",
+            "created": "2023-05-05T17:51:02.601Z",
             "sortNum": 90000
         },
         {
-            "_id": "3d05c730-22cb-48e8-b777-305df2e2d18e",
+            "_id": "0d8b3ce4-7ae1-45ca-858b-d143c23ca450",
+            "name": "Agendamento",
+            "containerId": "",
+            "created": "2023-06-08T01:13:05.807Z",
+            "sortNum": 95000
+        },
+        {
+            "_id": "500e081b-eab9-4a36-a368-3ceaec614929",
             "name": "GET",
-            "containerId": "4d00597f-0b41-454f-b47b-b27db64461c1",
-            "created": "2023-04-09T14:00:43.582Z",
+            "containerId": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
+            "created": "2023-05-05T17:51:02.602Z",
             "sortNum": 100000
         },
         {
-            "_id": "3b1ada85-ae3e-4cb6-85fd-7834c6731f02",
+            "_id": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "name": "Ofertas",
+            "containerId": "",
+            "created": "2023-05-27T14:04:23.569Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "3ca8e491-2bc2-4ecf-b4ba-e60de1e6d3d3",
+            "name": "GET",
+            "containerId": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "created": "2023-05-27T14:04:23.570Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "fdc89a16-9cbc-40a8-8943-9e5d7b734dd9",
+            "name": "GET",
+            "containerId": "0d8b3ce4-7ae1-45ca-858b-d143c23ca450",
+            "created": "2023-06-08T01:13:05.808Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "9334f5c4-27a1-4960-b7a3-c081e515f7b5",
             "name": "POST",
-            "containerId": "4d00597f-0b41-454f-b47b-b27db64461c1",
-            "created": "2023-04-09T14:00:49.596Z",
+            "containerId": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
+            "created": "2023-05-05T17:51:02.603Z",
             "sortNum": 110000
         },
         {
-            "_id": "c9eb3f8c-8c19-4025-8322-ba99941dec84",
+            "_id": "f46b722c-0f06-440b-909c-1135b8f22cdb",
+            "name": "POST",
+            "containerId": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "created": "2023-05-27T14:04:23.571Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "737bb8b3-ea3d-40c3-bf2f-12e6d373b90f",
+            "name": "POST",
+            "containerId": "0d8b3ce4-7ae1-45ca-858b-d143c23ca450",
+            "created": "2023-06-08T01:13:05.809Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "614ff9ef-8934-4ce5-91d8-131e5a9c1efb",
+            "name": "Recuperar Email",
+            "containerId": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
+            "created": "2023-05-05T17:51:17.995Z",
+            "sortNum": 115000
+        },
+        {
+            "_id": "e40401b5-f72f-42c1-bf3b-00b7290b34a4",
+            "name": "Recuperar Email",
+            "containerId": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "created": "2023-05-27T14:04:23.572Z",
+            "sortNum": 115000
+        },
+        {
+            "_id": "a7ea870d-13c3-472f-adec-0aebd441c088",
             "name": "PUT",
-            "containerId": "4d00597f-0b41-454f-b47b-b27db64461c1",
-            "created": "2023-04-09T14:15:06.763Z",
+            "containerId": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
+            "created": "2023-05-05T17:51:02.604Z",
             "sortNum": 120000
         },
         {
-            "_id": "df0eb42b-a934-4db5-8d41-c87b427141fd",
+            "_id": "a405a592-25d1-48fc-a5c0-22207f9bef65",
+            "name": "PUT",
+            "containerId": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "created": "2023-05-27T14:04:23.573Z",
+            "sortNum": 120000
+        },
+        {
+            "_id": "99304793-e9be-4b24-91f3-837bb876eb64",
+            "name": "PUT",
+            "containerId": "0d8b3ce4-7ae1-45ca-858b-d143c23ca450",
+            "created": "2023-06-08T01:13:05.811Z",
+            "sortNum": 120000
+        },
+        {
+            "_id": "4de782ca-db2c-4c2e-914f-c571c9203c8f",
             "name": "DELETE",
-            "containerId": "4d00597f-0b41-454f-b47b-b27db64461c1",
-            "created": "2023-04-09T14:15:10.342Z",
+            "containerId": "bff0d1fe-3b3f-4a62-8cb4-0a307f5dbb29",
+            "created": "2023-05-05T17:51:02.605Z",
+            "sortNum": 130000
+        },
+        {
+            "_id": "464e1e32-1a1f-4461-adf0-dd37b175cf4b",
+            "name": "DELETE",
+            "containerId": "1f36babd-d882-4e8d-a663-b275918f9058",
+            "created": "2023-05-27T14:04:23.574Z",
+            "sortNum": 130000
+        },
+        {
+            "_id": "dbc63e07-ba9a-4ac6-aba6-1f2b136d0dbc",
+            "name": "DELETE",
+            "containerId": "0d8b3ce4-7ae1-45ca-858b-d143c23ca450",
+            "created": "2023-06-08T01:13:05.813Z",
             "sortNum": 130000
         }
     ],
     "requests": [
         {
-            "_id": "cc36d0c2-c039-4456-ab26-acf548265bd7",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "d7e4a31a-98ba-4e0c-baf9-8663789b61c6",
+            "_id": "5ce1c937-3098-4676-85e9-0bbae335150b",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "c434404d-3ee7-4342-b239-6f8a7bcd134d",
             "name": "Cadastrar historico do pet",
-            "url": "http://localhost:3000/historico/cadastrar/641e57c458c94f7b7e5333be",
+            "url": "http://localhost:3000/historico/cadastrar/641e651e16c62a574ba38a72",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2023-04-09T13:47:55.863Z",
-            "modified": "2023-04-09T13:47:55.863Z",
+            "created": "2023-05-05T17:51:02.593Z",
+            "modified": "2023-06-02T14:46:47.986Z",
             "headers": [],
             "params": [],
             "body": {
@@ -114,32 +198,36 @@
                 "raw": "{\n  \"diagnostico\":{\n    \"diagnostico\": \"teste\",\n    \"descricao\": \"isso é so um teste\"\n  }\n}",
                 "form": []
             },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzEiLCJub21lIjoiTmljb2xhcyIsImVtYWlsIjoibmljaG9sbGFzbGltbWE3MzRAZ21haWwuY29tIiwic2VuaGEiOiJuaWNvbGFzMTIzIiwiZW5kZXJlY28iOnsiYmFpcnJvIjoiZ2FsbyBicmFuY28iLCJydWEiOiJhdiBkdXNtZW5pbCBzYW50b3MgZmVybmFuZGVzIiwibnVtZXJvIjo4ODUsImNvbXBsZW1lbnRvIjoibsOjbyB0ZW0iLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzIifSwiZG9jdW1lbnRvIjp7ImRvY3VtZW50byI6IkNQRiIsIm51bWVybyI6IjEyMy40NTYuNzg5LTAwIiwiX2lkIjoiNjQxYTRkYjljMjM4OTAyODY0Zjg5ZTczIn0sInRlbGVmb25lIjp7Im51bWVybyI6OTg4MTE5ODEyLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzQifSwidGlwb1VzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTY3OTg2ODc2OH0.ljqhoYHMKlhApyz-Xm0SnpO8ksjPvFdPd8N3xn5KXaY"
+            },
             "tests": []
         },
         {
-            "_id": "8356f82f-b7c4-420d-8641-f8911d8d06f8",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "26fff87a-0064-412c-b339-86834999e3ca",
+            "_id": "11391ea8-8b15-4749-b320-12bbd7fb974d",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "083ab292-97f6-4456-80bc-7abeb4ff8e00",
             "name": "Buscar historicos",
             "url": "http://localhost:3000/historico/buscar",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2023-04-09T13:48:19.582Z",
-            "modified": "2023-04-09T13:48:19.582Z",
+            "created": "2023-05-05T17:51:02.594Z",
+            "modified": "2023-05-05T17:51:02.594Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "524cabc3-99cc-4026-8524-fdf117fad497",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "0bacdb3a-df07-4761-be61-ec7f83146e5c",
+            "_id": "0675f7f2-7c80-44e1-b180-bfd33732b546",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "a87db2b4-1291-4090-9303-fdaf2e34dd2b",
             "name": "Buscar pets",
             "url": "http://localhost:3000/pet/buscar",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2023-04-09T13:49:39.685Z",
-            "modified": "2023-04-09T13:49:39.685Z",
+            "created": "2023-05-05T17:51:02.595Z",
+            "modified": "2023-05-05T17:51:02.595Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -149,15 +237,15 @@
             "tests": []
         },
         {
-            "_id": "9c580e45-9acf-4126-b94a-2c4cc3c53dfa",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "7c3f6f2e-f409-453e-b045-4c64c9bff6df",
+            "_id": "0edaffd7-520f-44c0-918c-f1b561798c3a",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "e4086f9c-ef0f-42a7-909e-f70f396fb7fb",
             "name": "Cadastrar pet",
             "url": "localhost:3000/pet/cadastrar",
             "method": "POST",
             "sortNum": 40000,
-            "created": "2023-04-09T13:50:01.436Z",
-            "modified": "2023-04-09T13:50:01.436Z",
+            "created": "2023-05-05T17:51:02.596Z",
+            "modified": "2023-05-05T17:51:02.596Z",
             "headers": [],
             "params": [],
             "body": {
@@ -172,15 +260,15 @@
             "tests": []
         },
         {
-            "_id": "04310020-4e00-4377-b27f-95b4e0a47c67",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "0bacdb3a-df07-4761-be61-ec7f83146e5c",
+            "_id": "0db75904-d280-4de8-bacc-276aac687861",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "a87db2b4-1291-4090-9303-fdaf2e34dd2b",
             "name": "Buscar pet do usuario logado",
             "url": "http://localhost:3000/pet/buscar-pets-usuario",
             "method": "GET",
             "sortNum": 50000,
-            "created": "2023-04-09T13:50:26.333Z",
-            "modified": "2023-04-09T13:50:26.333Z",
+            "created": "2023-05-05T17:51:02.597Z",
+            "modified": "2023-05-05T17:51:02.597Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -190,15 +278,15 @@
             "tests": []
         },
         {
-            "_id": "60c0318d-9994-4cee-9575-810c67731e45",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "0bacdb3a-df07-4761-be61-ec7f83146e5c",
+            "_id": "ffb54080-50ee-48c6-911b-5b3a33cb5c54",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "a87db2b4-1291-4090-9303-fdaf2e34dd2b",
             "name": "Buscar pet por id",
             "url": "http://localhost:3000/pet/buscar/641e57c458c94f7b7e5333be",
             "method": "GET",
             "sortNum": 60000,
-            "created": "2023-04-09T13:51:54.700Z",
-            "modified": "2023-04-09T13:52:25.695Z",
+            "created": "2023-05-05T17:51:02.598Z",
+            "modified": "2023-05-05T17:51:02.598Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -208,15 +296,15 @@
             "tests": []
         },
         {
-            "_id": "7fd98699-ac49-4180-b06d-187a94515412",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "3d05c730-22cb-48e8-b777-305df2e2d18e",
+            "_id": "4f905fe0-7b81-449e-a30c-f8e2f319a7e8",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "500e081b-eab9-4a36-a368-3ceaec614929",
             "name": "Buscar usuarios",
             "url": "localhost:3000/usuario/buscar",
             "method": "GET",
             "sortNum": 70000,
-            "created": "2023-04-09T14:02:18.239Z",
-            "modified": "2023-04-09T14:02:18.239Z",
+            "created": "2023-05-05T17:51:02.599Z",
+            "modified": "2023-05-05T17:51:02.599Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -226,15 +314,51 @@
             "tests": []
         },
         {
-            "_id": "d52a3f69-a817-4a74-9681-dab97c6745e4",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "3d05c730-22cb-48e8-b777-305df2e2d18e",
+            "_id": "e1aff525-452d-4adf-8ef2-1060f64dd2e6",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "3ca8e491-2bc2-4ecf-b4ba-e60de1e6d3d3",
+            "name": "Buscar usuarios",
+            "url": "http://localhost:3000/oferta/buscarServicos",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-27T14:04:23.569Z",
+            "modified": "2023-05-27T18:13:54.796Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzEiLCJub21lIjoiTmljb2xhcyIsImVtYWlsIjoibmljaG9sbGFzbGltbWE3MzRAZ21haWwuY29tIiwic2VuaGEiOiJuaWNvbGFzMTIzIiwiZW5kZXJlY28iOnsiYmFpcnJvIjoiZ2FsbyBicmFuY28iLCJydWEiOiJhdiBkdXNtZW5pbCBzYW50b3MgZmVybmFuZGVzIiwibnVtZXJvIjo4ODUsImNvbXBsZW1lbnRvIjoibsOjbyB0ZW0iLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzIifSwiZG9jdW1lbnRvIjp7ImRvY3VtZW50byI6IkNQRiIsIm51bWVybyI6IjEyMy40NTYuNzg5LTAwIiwiX2lkIjoiNjQxYTRkYjljMjM4OTAyODY0Zjg5ZTczIn0sInRlbGVmb25lIjp7Im51bWVybyI6OTg4MTE5ODEyLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzQifSwidGlwb1VzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTY3OTg2ODc2OH0.ljqhoYHMKlhApyz-Xm0SnpO8ksjPvFdPd8N3xn5KXaY"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2c171c7-ccce-43eb-a583-0e6e169049f6",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "fdc89a16-9cbc-40a8-8943-9e5d7b734dd9",
+            "name": "Buscar Agendamentos",
+            "url": "localhost:3000/agendamento/buscar",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-06-08T01:13:05.807Z",
+            "modified": "2023-06-08T01:36:37.723Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzEiLCJub21lIjoiTmljb2xhcyIsImVtYWlsIjoibmljaG9sbGFzbGltbWE3MzRAZ21haWwuY29tIiwic2VuaGEiOiJuaWNvbGFzMTIzIiwiZW5kZXJlY28iOnsiYmFpcnJvIjoiZ2FsbyBicmFuY28iLCJydWEiOiJhdiBkdXNtZW5pbCBzYW50b3MgZmVybmFuZGVzIiwibnVtZXJvIjo4ODUsImNvbXBsZW1lbnRvIjoibsOjbyB0ZW0iLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzIifSwiZG9jdW1lbnRvIjp7ImRvY3VtZW50byI6IkNQRiIsIm51bWVybyI6IjEyMy40NTYuNzg5LTAwIiwiX2lkIjoiNjQxYTRkYjljMjM4OTAyODY0Zjg5ZTczIn0sInRlbGVmb25lIjp7Im51bWVybyI6OTg4MTE5ODEyLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzQifSwidGlwb1VzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTY3OTg2ODc2OH0.ljqhoYHMKlhApyz-Xm0SnpO8ksjPvFdPd8N3xn5KXaY"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c0519d3a-f62a-45af-b40a-af272b548908",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "500e081b-eab9-4a36-a368-3ceaec614929",
             "name": "Buscar usuario por id",
             "url": "localhost:3000/usuario/buscar/641e51a8906a706945acbeac",
             "method": "GET",
             "sortNum": 80000,
-            "created": "2023-04-09T14:03:35.598Z",
-            "modified": "2023-04-09T14:03:35.598Z",
+            "created": "2023-05-05T17:51:02.600Z",
+            "modified": "2023-05-05T17:51:02.600Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -244,34 +368,150 @@
             "tests": []
         },
         {
-            "_id": "1c62165b-03b7-4616-8a87-03624a322cc2",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "3b1ada85-ae3e-4cb6-85fd-7834c6731f02",
+            "_id": "e5161ad9-057c-44d9-b6ef-dcbc0ce1a8f6",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "3ca8e491-2bc2-4ecf-b4ba-e60de1e6d3d3",
+            "name": "Buscar usuario por id",
+            "url": "localhost:3000/usuario/buscar/641e51a8906a706945acbeac",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-27T14:04:23.570Z",
+            "modified": "2023-05-27T14:04:23.569Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b5f6e055-55b1-41a9-9c20-48d1323a4ac4",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "fdc89a16-9cbc-40a8-8943-9e5d7b734dd9",
+            "name": "Buscar agendamentos por id",
+            "url": "localhost:3000/agendamento/buscar/64813093b864d7042cf727cc",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-06-08T01:13:05.808Z",
+            "modified": "2023-06-08T01:37:52.569Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e401ead-439a-4da3-98e5-0555cc065635",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "9334f5c4-27a1-4960-b7a3-c081e515f7b5",
             "name": "Cadastrar usuario",
             "url": "http://localhost:3000/usuario/cadastrar",
             "method": "POST",
             "sortNum": 90000,
-            "created": "2023-04-09T14:12:57.539Z",
-            "modified": "2023-04-09T14:13:23.807Z",
+            "created": "2023-05-05T17:51:02.601Z",
+            "modified": "2023-05-05T18:00:21.895Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"nome\":\"Teste\",\r\n  \"email\":\"nichollaslimma734@gmail.com\",\r\n  \"senha\":\"nicolas123\",\r\n  \"endereco\": {\r\n    \"bairro\":\"galo branco\",\r\n    \"rua\":\"av dusmenil santos fernandes\",\r\n    \"complemento\":\"não tem\",\r\n    \"numero\":885\r\n  },\r\n  \"documento\":{\r\n    \"documento\":\"cpf\",\r\n    \"numero\":\"123.456.789-00\"\r\n  },\r\n  \"telefone\":{\r\n    \"numero\":\"988119812\"\r\n  },\r\n  \"tipoUsuario\":\"admin\"\r\n}",
+                "raw": "{\n  \"nome\":\"Rodrigo Ribeiro\",\n  \"email\":\"rodrigo.rsantos40@gmail.com\",\n  \"senha\":\"nicolas123\",\n  \"endereco\": {\n    \"bairro\":\"ali\",\n    \"rua\":\"av santos\",\n    \"complemento\":\"não tem\",\n    \"numero\":885\n  },\n  \"documento\":{\n    \"documento\":\"cpf\",\n    \"numero\":\"123.456.789-00\"\n  },\n  \"telefone\":{\n    \"numero\":\"988119812\"\n  },\n  \"tipoUsuario\":\"admin\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "3d944f59-c7e3-4708-99f1-7b8875b7030e",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "df0eb42b-a934-4db5-8d41-c87b427141fd",
+            "_id": "dae009ef-b4fb-4204-a58e-c256c9c1db72",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "614ff9ef-8934-4ce5-91d8-131e5a9c1efb",
+            "name": "Enviar Email",
+            "url": "http://localhost:3000/usuario/RecuperarEmail",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-05T17:51:17.995Z",
+            "modified": "2023-05-08T10:33:03.696Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rodrigo.rsantos40gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4abdf450-c74a-4947-bd9d-845bc0f2b8cb",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "f46b722c-0f06-440b-909c-1135b8f22cdb",
+            "name": "Cadastrar usuario",
+            "url": "http://localhost:3000/usuario/cadastrar",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-27T14:04:23.571Z",
+            "modified": "2023-05-27T14:04:23.569Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Rodrigo Ribeiro\",\n  \"email\":\"rodrigo.rsantos40@gmail.com\",\n  \"senha\":\"nicolas123\",\n  \"endereco\": {\n    \"bairro\":\"ali\",\n    \"rua\":\"av santos\",\n    \"complemento\":\"não tem\",\n    \"numero\":885\n  },\n  \"documento\":{\n    \"documento\":\"cpf\",\n    \"numero\":\"123.456.789-00\"\n  },\n  \"telefone\":{\n    \"numero\":\"988119812\"\n  },\n  \"tipoUsuario\":\"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "19cd960b-b335-4873-b526-6707cc794fd3",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "e40401b5-f72f-42c1-bf3b-00b7290b34a4",
+            "name": "Enviar Email",
+            "url": "http://localhost:3000/usuario/RecuperarEmail",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-27T14:04:23.572Z",
+            "modified": "2023-05-27T14:04:23.569Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"rodrigo.rsantos40gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "72130be5-11c1-4ea9-b9e7-acb7fba8f94b",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "737bb8b3-ea3d-40c3-bf2f-12e6d373b90f",
+            "name": "Cadastrar agendamento",
+            "url": "http://localhost:3000/agendamento/cadastrar",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-06-08T01:13:05.809Z",
+            "modified": "2023-06-08T16:15:22.577Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tipo_Consulta\":\"Consulta de Rotina\",\n  \"complemento\":\"quero que meu pet esteja com a saude 100%\",\n  \"id_usuario\": \"641e51a8906a706945acbeac\",\n  \"id_pet\": \"64208faf72c732f26afda3d3\",\n  \"data_agendamento\": \"2023-06-10\",\n  \"horario\": \"14:00\",\n  \"status\": \"Andamento\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzEiLCJub21lIjoiTmljb2xhcyIsImVtYWlsIjoibmljaG9sbGFzbGltbWE3MzRAZ21haWwuY29tIiwic2VuaGEiOiJuaWNvbGFzMTIzIiwiZW5kZXJlY28iOnsiYmFpcnJvIjoiZ2FsbyBicmFuY28iLCJydWEiOiJhdiBkdXNtZW5pbCBzYW50b3MgZmVybmFuZGVzIiwibnVtZXJvIjo4ODUsImNvbXBsZW1lbnRvIjoibsOjbyB0ZW0iLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzIifSwiZG9jdW1lbnRvIjp7ImRvY3VtZW50byI6IkNQRiIsIm51bWVybyI6IjEyMy40NTYuNzg5LTAwIiwiX2lkIjoiNjQxYTRkYjljMjM4OTAyODY0Zjg5ZTczIn0sInRlbGVmb25lIjp7Im51bWVybyI6OTg4MTE5ODEyLCJfaWQiOiI2NDFhNGRiOWMyMzg5MDI4NjRmODllNzQifSwidGlwb1VzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTY3OTg2ODc2OH0.ljqhoYHMKlhApyz-Xm0SnpO8ksjPvFdPd8N3xn5KXaY"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e605b62e-9ca6-47cf-acbc-86ac7af3a516",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "4de782ca-db2c-4c2e-914f-c571c9203c8f",
             "name": "Excluir usuario",
             "url": "http://localhost:3000/usuario/excluir/6426f7c2a206b16b96ac3ab6",
             "method": "DELETE",
             "sortNum": 100000,
-            "created": "2023-04-09T14:15:20.171Z",
-            "modified": "2023-04-09T14:18:12.822Z",
+            "created": "2023-05-05T17:51:02.602Z",
+            "modified": "2023-05-05T17:51:02.602Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -281,15 +521,51 @@
             "tests": []
         },
         {
-            "_id": "fd70c589-d9d5-458a-a12b-e94418ca71ef",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "c9eb3f8c-8c19-4025-8322-ba99941dec84",
+            "_id": "2155de00-d182-4b31-a281-07615c6e133b",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "464e1e32-1a1f-4461-adf0-dd37b175cf4b",
+            "name": "Excluir usuario",
+            "url": "http://localhost:3000/usuario/excluir/6426f7c2a206b16b96ac3ab6",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-05-27T14:04:23.574Z",
+            "modified": "2023-05-27T14:04:23.569Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2fc2ef1b-845d-4857-843a-c348117a8efa",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "dbc63e07-ba9a-4ac6-aba6-1f2b136d0dbc",
+            "name": "Excluir agendamento",
+            "url": "http://localhost:3000/agendamento/excluir/64813093b864d7042cf727cc",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-06-08T01:13:05.813Z",
+            "modified": "2023-06-08T01:38:50.191Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "300a0458-d922-43a7-924a-f70b6bec6090",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "a7ea870d-13c3-472f-adec-0aebd441c088",
             "name": "Ataualizar usuario",
             "url": "http://localhost:3000/usuario/atualizar/641e655516c62a574ba38a87",
             "method": "PUT",
             "sortNum": 110000,
-            "created": "2023-04-09T14:20:00.407Z",
-            "modified": "2023-04-09T14:21:23.471Z",
+            "created": "2023-05-05T17:51:02.603Z",
+            "modified": "2023-05-05T17:51:02.603Z",
             "headers": [],
             "params": [],
             "body": {
@@ -304,15 +580,61 @@
             "tests": []
         },
         {
-            "_id": "fda7b134-eb37-4741-8560-2109f42e7ea6",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "92d85ec2-8f43-4bb8-8274-4d80c56f5e4a",
+            "_id": "e4f3ff99-575c-4b49-8359-015ee2e0f723",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "a405a592-25d1-48fc-a5c0-22207f9bef65",
+            "name": "Ataualizar usuario",
+            "url": "http://localhost:3000/usuario/atualizar/641e655516c62a574ba38a87",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-05-27T14:04:23.573Z",
+            "modified": "2023-05-27T14:04:23.569Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\":\"gilberto@gmail.com\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "76fbb857-3a6d-4961-a5ac-c2f2be97abc8",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "99304793-e9be-4b24-91f3-837bb876eb64",
+            "name": "Atualizar agendamento",
+            "url": "http://localhost:3000/usuario/atualizar/641e655516c62a574ba38a87",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-06-08T01:13:05.812Z",
+            "modified": "2023-06-08T01:13:05.808Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\":\"gilberto@gmail.com\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlNjU1NTE2YzYyYTU3NGJhMzhhODciLCJub21lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdpbEBnbWFpbC5jb20iLCJzZW5oYSI6ImdpbCIsImVuZGVyZWNvIjp7ImJhaXJybyI6ImdhbG8gYnJhbmNvIiwicnVhIjoiYXYgZHVzbWVuaWwgc2FudG9zIGZlcm5hbmRlcyIsIm51bWVybyI6ODg1LCJjb21wbGVtZW50byI6Im7Do28gdGVtIiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YTg4In0sImRvY3VtZW50byI6eyJkb2N1bWVudG8iOiJjcGYiLCJudW1lcm8iOiIxMjMuNDU2Ljc4OS0wMCIsIl9pZCI6IjY0MWU2NTU1MTZjNjJhNTc0YmEzOGE4OSJ9LCJ0ZWxlZm9uZSI6eyJudW1lcm8iOjk4ODExOTgxMiwiX2lkIjoiNjQxZTY1NTUxNmM2MmE1NzRiYTM4YThhIn0sInRpcG9Vc3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE2Nzk4NzAyNDF9.Jm_eU2_4ajQCD-ueiX-_xZ9lN8VoGEUp3Wa79UDO4wM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "476ec7f9-fa3a-425a-bf82-d78cbae49258",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "252ee1b2-9bdc-428b-92c1-b5fa82c9be70",
             "name": "Excluir pet",
             "url": "http://localhost:3000/pet/excluir/6432c27aedeb94cec269bd14",
             "method": "DELETE",
             "sortNum": 120000,
-            "created": "2023-04-09T14:21:54.090Z",
-            "modified": "2023-04-09T14:22:46.485Z",
+            "created": "2023-05-05T17:51:02.604Z",
+            "modified": "2023-05-05T17:51:02.604Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -322,15 +644,15 @@
             "tests": []
         },
         {
-            "_id": "6e9b68b2-6ec4-4ac9-9ee2-fbb96cfedbab",
-            "colId": "65aed2cf-2adb-4bac-ba4d-a6a424ce9c3a",
-            "containerId": "d1f4d697-445b-4531-8a45-4ba4e41cf86f",
+            "_id": "abe77a5c-6a88-4822-9f7a-90bb3008da93",
+            "colId": "8a759a0a-62e3-4817-9205-65e8d5db2be6",
+            "containerId": "b9203bc7-fe49-4d13-a2c9-df06f0d83bb4",
             "name": "Atualizar pet",
             "url": "http://localhost:3000/pet/atualizar/642361f2dacd331a6389dd53",
             "method": "PUT",
             "sortNum": 130000,
-            "created": "2023-04-09T14:23:14.062Z",
-            "modified": "2023-04-09T14:24:12.394Z",
+            "created": "2023-05-05T17:51:02.605Z",
+            "modified": "2023-05-05T17:51:02.605Z",
             "headers": [],
             "params": [],
             "body": {
