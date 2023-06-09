@@ -8,6 +8,7 @@ const routes = Router();
 routes.get("/buscar",authenticate, AgendamentoController.buscarAgendamentos);
 routes.get("/buscar-concluido",authenticate, AgendamentoController.buscarAgendamentosConcluidos);
 routes.get("/buscar-andamento",authenticate, AgendamentoController.buscarAgendamentosEmAndamento);
+routes.get("/buscar-cliente",authenticate, AgendamentoController.buscarTodosOsAgendamentosDeUmCliente);
 routes.get("/buscar/:id",authenticate, AgendamentoController.buscarAgendamento);
 routes.post("/cadastrar",authenticate, AgendamentoController.cadastrarAgendamento);
 routes.put("/atualizar/:id",authenticate, AgendamentoController.atualizarAgendamento);

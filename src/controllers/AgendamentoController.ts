@@ -52,6 +52,16 @@ class AgendamentoController {
         }
     }
 
+    public async buscarTodosOsAgendamentosDeUmCliente(req: Request, res: Response){
+        try{
+            const id = res.locals.jwtPayload._id;
+            const agendamentos = await Agendamento.find({id_usuario:id}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();;
+            res.status(200).json(agendamentos);
+        }catch(error){
+            res.status(500).json({ message: error });
+        }
+    }
+
     public async buscarAgendamento(req: Request, res: Response) {
         try {
             const id = req.params.id;
