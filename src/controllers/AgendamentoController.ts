@@ -27,7 +27,7 @@ class AgendamentoController {
 
     public async buscarAgendamentos(req: Request, res: Response) {
         try {
-            const agendamentos = await Agendamento.find({}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();
+            const agendamentos = await Agendamento.find({}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();
             res.status(200).json(agendamentos);
         } catch (error) {
             res.status(500).json({ message: error });
@@ -36,7 +36,7 @@ class AgendamentoController {
 
     public async buscarAgendamentosConcluidos(req: Request, res: Response){
         try{
-            const agendamentos = await Agendamento.find({status:'concluido'}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();
+            const agendamentos = await Agendamento.find({status:'concluido'}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();
             res.status(200).json(agendamentos);
         }catch(error){
             res.status(500).json({ message: error });
@@ -45,7 +45,7 @@ class AgendamentoController {
 
     public async buscarAgendamentosEmAndamento(req: Request, res: Response){
         try{
-            const agendamentos = await Agendamento.find({status:'andamento'}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();
+            const agendamentos = await Agendamento.find({status:'andamento'}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();
             res.status(200).json(agendamentos);
         }catch(error){
             res.status(500).json({ message: error });
@@ -55,7 +55,7 @@ class AgendamentoController {
     public async buscarTodosOsAgendamentosDeUmCliente(req: Request, res: Response){
         try{
             const id = res.locals.jwtPayload._id;
-            const agendamentos = await Agendamento.find({id_usuario:id}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();;
+            const agendamentos = await Agendamento.find({id_usuario:id}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();;
             res.status(200).json(agendamentos);
         }catch(error){
             res.status(500).json({ message: error });
@@ -69,7 +69,7 @@ class AgendamentoController {
                 return res.status(400).json({ message: `id ${id} não é válido...` });
             }
 
-            const agendamento = await Agendamento.findById(id, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha').exec();
+            const agendamento = await Agendamento.findById(id, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();
             if (agendamento) {
                 res.status(200).json(agendamento);
             } else {
