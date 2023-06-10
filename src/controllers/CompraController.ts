@@ -24,6 +24,24 @@ class CompraController {
         }
     }
 
+    public async comprarMultiplasOfertas(req: Request, res: Response){
+        try{
+            const user_id = res.locals.jwtPayload._id;
+            const usuario = await Usuario.findById(user_id);
+            if (!usuario) {
+                throw `Usuario ${user_id} não encontrado`;
+            }
+            const ofertas_ids = req.body.ofertas;
+            const ofertas = await Oferta.find({_id:{"$in":ofertas_ids}}, "-__v -nome -descricao -preco -tipo");
+            usuario.compras.push(...ofertas);
+            usuario.save();
+            res.json(usuario.compras);
+        } catch(error){
+            console.log(error);
+            res.status(500).json(error);
+        }
+    }
+
     public async buscarComprasDoUsuario(req: Request, res: Response) {
         try {
             const user_id = res.locals.jwtPayload._id;
