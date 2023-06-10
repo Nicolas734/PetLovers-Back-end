@@ -38,7 +38,7 @@ class HistoricoController {
                 });
 
                 agendamento.status = 'concluido';
-                agendamento.data_conclusao = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
+                agendamento.data_conclusao = new Date();
                 await agendamento.save();
                 const historicoCadastrado = await historico.save();
                 return res.status(201).json(historicoCadastrado);
@@ -90,7 +90,10 @@ class HistoricoController {
                 res.status(404).json({ message: `Pet ${req.params.id} não encontrado...` });
             }else{
                 const historicos = await Historico.find({pet_id:pet_id}, "-__v").populate('pet_id', '-__v -_id -nome -idade -raca -tamanho -dono_id').exec();
-                res.status(200).json(historicos);
+                const dados = historicos.sort((a, b) => {
+                    return b.data_registro.getDate() - a.data_registro.getDate()
+                })
+                res.status(200).json(dados);
             }
         }catch(error){
             res.status(500).json({ message: error });

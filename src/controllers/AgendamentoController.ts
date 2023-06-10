@@ -56,6 +56,9 @@ class AgendamentoController {
         try{
             const id = res.locals.jwtPayload._id;
             const agendamentos = await Agendamento.find({id_usuario:id}, "-__v").populate('id_usuario id_pet', '-__v -endereco -documento -telefone -dono_id -email -senha -compras -upload.ext -upload.local -upload._id').exec();;
+            const dados = agendamentos.sort((a, b)=>{
+                return new Date(b.data_agendamento).getDate() - new Date(a.data_agendamento).getDate()
+            })
             res.status(200).json(agendamentos);
         }catch(error){
             res.status(500).json({ message: error });
@@ -100,9 +103,6 @@ class AgendamentoController {
                 }
                 if (data_agendamento) {
                     agendamento.data_agendamento = data_agendamento;
-                }
-                if (horario) {
-                    agendamento.horario = horario;
                 }
                 if (status) {
                     agendamento.status = status;
@@ -149,7 +149,7 @@ class AgendamentoController {
             }
 
             agendamento.status = 'concluido';
-            agendamento.data_conclusao = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
+            agendamento.data_conclusao = new Date();
 
             await agendamento.save();
             res.status(200).json(agendamento);
