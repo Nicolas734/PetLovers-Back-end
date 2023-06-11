@@ -3,7 +3,7 @@ import Documento from "./Documento";
 import Endereco from "./Endereco";
 import Telefone from "./Telefone";
 import Upload from "./Upload";
-import { Oferta, IOferta } from "./Ofertas";
+import { ICompra, compra } from "./Compra";
 
 
 const { Schema } = mongoose;
@@ -18,7 +18,7 @@ interface IUsuario extends Document {
     telefone: typeof Telefone;
     upload: typeof Upload;
     tipoUsuario: "admin" | "funcionario" | "cliente";
-    compras: IOferta[];
+    compras: ICompra[];
   }
 
 
@@ -35,7 +35,7 @@ const usuario = new Schema({
         enum: ['admin', 'funcionario', 'cliente'],
         default: 'cliente'
     },
-    compras: [{ type: Schema.Types.ObjectId, ref: Oferta }]
+    compras: [compra]
 });
 
 
