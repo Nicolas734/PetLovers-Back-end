@@ -54,7 +54,7 @@ class CompraController {
     public async buscarComprasDoUsuario(req: Request, res: Response) {
         try {
             const user_id = res.locals.jwtPayload._id;
-            const usuario = await Usuario.findById(user_id, '-__v').populate('compras', '-__v').exec();
+            const usuario = await Usuario.findById(user_id, '-__v').populate('compras.ofertas', '-__v').exec();
             if (!usuario) {
                 throw `Usuario ${user_id} não encontrado...`;
             }
